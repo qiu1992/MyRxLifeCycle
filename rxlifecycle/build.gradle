@@ -8,12 +8,13 @@ ext {
     libraryName = 'rxlifecycle'
     artifact = 'rxlifecycle'
 
-    libraryDescription = 'a simple rxlifecycle lib'
+    libraryDescription = 'a simple rxlifecycle library like trello RxLifecycle,' +
+            'but only support bindUntilEvent. please make sure your project had dependence rxjava.'
 
     siteUrl = 'https://github.com/qiu1992/MyRxLifeCycle'
     gitUrl = 'https://github.com/qiu1992/MyRxLifeCycle.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'qiu1992'
     developerName = 'qxr'
@@ -44,8 +45,7 @@ android {
 
 dependencies {
     compile fileTree (dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.2.0'
-
+    provided 'com.android.support:appcompat-v7:24.2.0'
     provided 'io.reactivex:rxjava:1.1.9'
 }
 
