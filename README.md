@@ -10,3 +10,5 @@ Observable.interval (2, TimeUnit.SECONDS)
 .subscribe (...);
 
 特别注意：bindUntilEvent请放在离subscribe最近的地方。也就是说，compose bindUntilEvent之后，必须是subscribe。
+
+混淆：-keep class com.qiu.rxlifecycle.** { *; }
